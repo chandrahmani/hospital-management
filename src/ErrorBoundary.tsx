@@ -8,7 +8,6 @@ class ErrorBoundary extends Component {
     this.state = { hasError: false };
   }
 
-  // @ts-expect-error: getDerivedStateFromError does not use error parameter here
   static getDerivedStateFromError() {
     return { hasError: true };
   }
