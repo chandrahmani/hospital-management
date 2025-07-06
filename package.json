@@ -1,6 +1,9 @@
 {
  "name": "template-rtw",
   "version": "1.0.0",
+    "lint-staged": {
+    "*.ts": "eslint --fix"
+  },
   "description": "Template for React 19, Typescript 5 with Webpack 5",
   "main": "index.js",
   "scripts": {
@@ -31,9 +34,6 @@
   "react": "^18.2.0",
   "react-dom": "^18.2.0",
     "react-router": "^7.3.0"
-  },
-    "lint-staged": {
-    "*.ts": "eslint --fix"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
