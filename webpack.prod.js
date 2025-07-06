@@ -7,7 +7,6 @@ const { execSync } = require('child_process');
 
 // get the date at the time of build in the 'build-info.txt' file
 // not in used
-const path = require('path');
 
 const distDir = path.resolve(__dirname, 'dist');
 const buildFilePath = path.join(distDir, 'build-info.txt');
