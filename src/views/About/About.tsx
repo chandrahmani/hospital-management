@@ -7,14 +7,13 @@ function About() {
         About Us
       </Typography>
       <Typography variant="body1" paragraph>
-        Welcome to our company! We are dedicated to providing the best services and
-        solutions to our customers. Our team of experts is passionate about what
-        we do, and we strive to make a positive impact in everything we create.
+        Welcome to our company! We are dedicated to providing the best services and solutions to our
+        customers. Our team of experts is passionate about what we do, and we strive to make a
+        positive impact in everything we create.
       </Typography>
       <Typography variant="body1" paragraph>
-        Our mission is to innovate and deliver high-quality products that meet the
-        needs of our clients. We believe in collaboration, creativity, and
-        continuous improvement.
+        Our mission is to innovate and deliver high-quality products that meet the needs of our
+        clients. We believe in collaboration, creativity, and continuous improvement.
       </Typography>
 
       <Box sx={{ mt: 4 }}>

@@ -1,10 +1,9 @@
-import { ReactNode } from "react";
-
+import { ReactNode } from 'react';
 
 export type ROUTE = {
-	name: string
-	title: string
-	element: ReactNode
-	path: string;
-	index?: boolean;
-}
+  name: string;
+  title: string;
+  element: ReactNode;
+  path: string;
+  index?: boolean;
+};
