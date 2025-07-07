@@ -12,6 +12,6 @@ module.exports = merge(common, {
     historyApiFallback: true, // Handle client-side routing
     hot: true, // Enable Hot Module Replacement (HMR)
     compress: true,
-    port: 3000,
+    port: 3001,
   },
 });
