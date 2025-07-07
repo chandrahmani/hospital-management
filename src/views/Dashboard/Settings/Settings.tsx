@@ -1,9 +1,7 @@
-import { Typography } from "@mui/material"
+import { Typography } from '@mui/material';
 
 function Settings() {
-  return (
-  <Typography variant='h3'>Settings</Typography>
-  )
+  return <Typography variant="h3">Settings</Typography>;
 }
 
-export default Settings
+export default Settings;

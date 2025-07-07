@@ -6,16 +6,14 @@ import Navigation from './Navigation';
 jest.mock('../../config/router.config', () => ({
   MAIN_ROUTES: [
     { path: '/', title: 'Home', name: 'home' },
-    { path: '/about', title: 'About', name: 'about' }
+    { path: '/about', title: 'About', name: 'about' },
   ],
-  DASHBOARD_NESTED_ROUTES: [
-    { path: '/dashboard', title: 'Dashboard', name: 'dashboard' }
-  ]
+  DASHBOARD_NESTED_ROUTES: [{ path: '/dashboard', title: 'Dashboard', name: 'dashboard' }],
 }));
 
 // Mock Link to render an anchor
 jest.mock('react-router', () => ({
-  Link: ({ to, children }: any) => <a href={to}>{children}</a>
+  Link: ({ to, children }: React.PropsWithChildren<{ to: string }>) => <a href={to}>{children}</a>,
 }));
 
 describe('Navigation', () => {

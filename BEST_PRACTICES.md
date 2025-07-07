@@ -5,6 +5,7 @@ This project is a modern template for scalable React applications using TypeScri
 ---
 
 ## 1. Unit Testing
+
 - **Write tests for all logic and UI components.** Use Jest and React Testing Library for unit and integration tests.
 - **Aim for 90%+ coverage.** Exclude boilerplate, config, and index files from coverage.
 - **Test edge cases and error states.** Mock APIs and test both success and failure scenarios.
@@ -12,10 +13,12 @@ This project is a modern template for scalable React applications using TypeScri
 - **Run tests locally and in CI** before merging code.
 
 ## Test Coverage Caveats
+
 - While this template aims for 90%+ branch coverage globally, 100% branch coverage is not always achievable for every file (e.g., service files with implicit returns or unreachable branches).
 - In such cases, the Jest configuration slightly lowers the branch threshold for those files. All meaningful logic and error paths are still covered by tests.
 
 ## 2. Performance
+
 - **Code splitting:** Use dynamic `import()` for large or rarely used components.
 - **Memoization:** Use `React.memo`, `useMemo`, and `useCallback` to avoid unnecessary re-renders.
 - **Optimize images:** Use modern formats and lazy loading for images.
@@ -23,6 +26,7 @@ This project is a modern template for scalable React applications using TypeScri
 - **Use production builds:** Always deploy using `yarn build` (Webpack production mode).
 
 ## 3. Code Quality & DRY Principles
+
 - **Keep components small and focused.** Each component should do one thing well.
 - **Reuse components and utilities.** Place shared logic in `utils/` or as custom hooks.
 - **Avoid code duplication.** Extract repeated logic into functions or components.
@@ -31,11 +35,13 @@ This project is a modern template for scalable React applications using TypeScri
 - **Comment complex logic.** Use comments to explain non-obvious code.
 
 ## 4. Project Structure
+
 - **Organize by feature or domain.** Group related files (components, views, services) together.
 - **Use index files for exports.** Simplifies imports and improves maintainability.
 - **Separate config, mocks, and layout.** Keep configuration, mock data, and layout components in their own folders.
 
 ## 5. Improvements & Recommendations
+
 - **Add E2E tests** (e.g., Cypress or Playwright) for critical user flows.
 - **Linting and formatting:** Use ESLint and Prettier for consistent code style.
 - **Accessibility:** Use semantic HTML and test with screen readers.
@@ -44,6 +50,7 @@ This project is a modern template for scalable React applications using TypeScri
 - **Continuous Integration:** Use GitHub Actions or similar for automated testing and deployment.
 
 ## 6. Documentation
+
 - **Document components and utilities.** Use JSDoc or TypeScript doc comments.
 - **Update README.md** with setup, usage, and contribution guidelines.
 

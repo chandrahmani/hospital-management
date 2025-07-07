@@ -16,7 +16,7 @@ describe('Profile', () => {
       greet: 'Hello!',
       location: 'Test City',
       intro: 'Test intro',
-      totalExperience: 5
+      totalExperience: 5,
     });
     render(<Profile />);
     expect(screen.getByText(/loading/i)).toBeInTheDocument();
@@ -42,7 +42,7 @@ describe('Profile', () => {
       greet: 'I have {{%totalExperience%}} years experience',
       location: 'Test City',
       intro: 'Test intro',
-      totalExperience: 7
+      totalExperience: 7,
     });
     render(<Profile />);
     await waitFor(() => {
