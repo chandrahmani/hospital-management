@@ -11,12 +11,11 @@ const { execSync } = require('child_process');
 const distDir = path.resolve(__dirname, 'dist');
 const buildFilePath = path.join(distDir, 'build-info.txt');
 
-// ✅ Ensure `dist/` exists
+
 if (!fs.existsSync(distDir)) {
   fs.mkdirSync(distDir, { recursive: true });
 }
 
-// ✅ Now write the file
 fs.writeFileSync(buildFilePath, 'Your build info here');
 
 class BuildDatePlugin {
