@@ -130,35 +130,35 @@ const Landing: FC = () => {
             {loading ? 'Creating...' : 'Create User'}
           </Button>
         </Box>
-
-        {/* User List */}
-        {users.length > 0 && (
-          <Box mt={5}>
-            <Typography variant="h6" mb={1}>
-              User List
-            </Typography>
-            <List>
-              {users.map((user) => (
-                <React.Fragment key={user.id}>
-                  <ListItem
-                    secondaryAction={
-                      <IconButton edge="end" onClick={() => handleDelete(user.id)}>
-                        delete
-                      </IconButton>
-                    }
-                  >
-                    <ListItemText
-                      primary={`${user.name}`}
-                      secondary={`Job: ${user.job} | ID: ${user.id}`}
-                    />
-                  </ListItem>
-                  <Divider />
-                </React.Fragment>
-              ))}
-            </List>
-          </Box>
-        )}
       </Box>
+
+      {/* User List */}
+      {users.length > 0 && (
+        <Box mt={5}>
+          <Typography variant="h6" mb={1}>
+            User List
+          </Typography>
+          <List>
+            {users.map((user) => (
+              <React.Fragment key={user.id}>
+                <ListItem
+                  secondaryAction={
+                    <IconButton edge="end" onClick={() => handleDelete(user.id)}>
+                      delete
+                    </IconButton>
+                  }
+                >
+                  <ListItemText
+                    primary={`${user.name}`}
+                    secondary={`Job: ${user.job} | ID: ${user.id}`}
+                  />
+                </ListItem>
+                <Divider />
+              </React.Fragment>
+            ))}
+          </List>
+        </Box>
+      )}
 
       <Box display="flex" alignItems="center" justifyContent="center">
         <StandardImageList />
