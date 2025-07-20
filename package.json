@@ -68,5 +68,8 @@
     "workerDirectory": [
       "public"
     ]
+  },
+  "output": {
+    "path": "build"
   }
 }
